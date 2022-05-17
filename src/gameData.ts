@@ -31,7 +31,7 @@ export const questions: Story[] = [
         }, 
   }, {
     id: 3,
-  text: 'Is this a lazy day or ambitious day?',
+  text: 'Is this a lazy day or not?',
   options: {
     left:{
       text: 'Go for a jog...',
@@ -74,12 +74,64 @@ export const questions: Story[] = [
           options: {
             left:{
               text: 'Go party...',
-              goTo: 6
+              goTo: 8
             },
             right: {
               text: 'Go back home...',
               goTo: 1
             }
           }, 
-            },
+            }, {
+              id: 7,
+            text: 'Take a nap...',
+            options: {
+              left:{
+                text: 'Nap more...',
+                goTo: 10
+              },
+              right: {
+                text: 'Eat...',
+                goTo: 1
+              }
+            }, 
+              }, {
+                id: 10,
+              text: 'OMG! You missed your meeting...',
+              options: {
+                left:{
+                  text: 'Nap more...',
+                  goTo: 10
+                },
+                right: {
+                  text: 'Call them!',
+                  goTo: 1
+                }
+              }, 
+                }, {
+                  id: 8,
+                text: 'So you have a meeting today...',
+                options: {
+                  left:{
+                    text: 'Relax & eat lunch...',
+                    goTo: 10
+                  },
+                  right: {
+                    text: 'Call them early...',
+                    goTo: 1
+                  }
+                }, 
+                  }, {
+                    id: 9,
+                  text: 'Very good job. You had a great day...',
+                  options: {
+                    left:{
+                      text: 'Netflix & chill...',
+                      goTo: 10
+                    },
+                    right: {
+                      text: 'Cook dinner...',
+                      goTo: 1
+                    }
+                  }, 
+                    },
   ]
