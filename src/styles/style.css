@@ -13,6 +13,7 @@
 }
 
 body {
+  text-align: center;
   padding: 0;
   margin: 0;
   display: flex;
@@ -24,12 +25,14 @@ body {
 
 .container {
   width: 800px;
-  max-width: 80%;
+  max-width: 100%;
   background-color: white;
   padding: 10px;
   border-radius: 5px;
   box-shadow: 0 0 10px 2px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .btn.grid{
@@ -63,9 +66,29 @@ body {
   width: 300px;
   height: 100px;
   font-size: 20px;
+  margin: 20px;
 }
 .Option-2{
   width: 300px;
   height: 100px;
   font-size: 20px;
+  margin: 20px;
+}
+
+#heading{
+  color: white;
+  justify-content: center;
+  top: 0;
+  margin: 100px;
+  text-align: center;
+}
+
+footer{
+  color: white;
+  position: absolute;
+  bottom: 0;
+  margin-top: -50px;
+  height: 2.5rem; 
+  margin: 20px;
+  background-color: #2c3e50;
 }
