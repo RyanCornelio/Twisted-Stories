@@ -25,19 +25,21 @@ const secondOption = document.querySelector('.Option-2')
 
 
 function handleClick(id: number) {
-// Skapa en loop på questions där de jämför id som tagits in med object id.
-// Använd objectet som du får att kalla på renderstep.
-for (let i = 0; i < questions.length; i++) {
-  const journey = questions[i];
-  if(journey.id == id){
+  // Skapa en loop på questions där de jämför id som tagits in med object id.
+  // Använd objectet som du får att kalla på renderstep.
+  for (let i = 0; i < questions.length; i++) {
+    const journey = questions[i];
+    if(journey.id == id){
       renderStep(journey)
+      
+    }
   }
-}
-
+  
   /* this.removeEventListener("click", handleClick); */
-console.log(id);
-
+  console.log(id);
+  
 }
+
 
 function renderStep(Gamestep: Story) {
 
@@ -73,21 +75,15 @@ function renderStep(Gamestep: Story) {
     console.log(journey)
 
     //If satsen är global...
-    if(journey.id == 2) {
+    if(journey.id == 1) {
       renderStep(journey)
     }
+    console.log(journey);
     
     
 
   }
 
-
-
-/* questions.forEach((Story) => {
-  Story
-});
-
-console.log(questions); */
 
 
 
