@@ -14,11 +14,13 @@ export interface Story {
       
         left: {
         text: string,
-        goTo: number
+        goTo: number,
+        hidden: boolean
       }
         right: {
-        text: string
-        goTo: number
+        text: string,
+        goTo: number,
+        hidden: boolean
       }
       
     }
